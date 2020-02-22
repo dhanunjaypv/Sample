@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "8261c3d0-9f79-4dbd-b485-71f3ef2d3bd4",
+		"name": "ProductIngestion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "pushProductToSalesForce",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"EventObject\": \"CUSTOMER\",\r\n\t\t\"EventType\": \"CREATE\",\r\n\t\t\"EventDateTime\": \"2018-12-26T00:00:00\",\r\n\t\t\"EventSourceSystem\": \"EBS\",\r\n\t\t\"EventBusinessID\": \"6712\",\r\n\r\n    \"Product\": {\r\n      \"ProductId\": \"ABCDEFGHIJKLMNOPQRSTUVWXYZA\",\r\n      \"productSubstatus\": \"ABCDEFGHIJKLMNOPQRSTUV\",\r\n      \"VisibleFlag\": \"false\",\r\n      \"ActiveDate\": \"2019-2-6T00:00:00\",\r\n      \"IntroDate\": \"2019-2-6T00:00:00\",\r\n      \"OldProductId\": \"ABCDEFGHIJ\",\r\n      \"ProductName\": \"ABCDEFGHIJKLMNO\",\r\n      \"ProductDescription\": \"ABCDEFGHIJKLMNOPQRSTUVWXYZA\",\r\n      \"ProductDescriptionCanada\": \"ABCDEFGHIJKLMN\",\r\n      \"Keywords\": false,\r\n      \"ProductSubstatus\": \"ABCDEFGHIJKLMNOPQRSTU\",\r\n      \"SubStatusReason\": \"ABCDEFGHIJKLMNOPQ\",\r\n      \"IsHazardous\": \"false\"\r\n    }\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9208/pushProductToSalesForce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9208",
+					"path": [
+						"pushProductToSalesForce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9208/addProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"EventObject\": \"CUSTOMER\",\r\n\t\t\"EventType\": \"CREATE\",\r\n\t\t\"EventDateTime\": \"2018-12-26T00:00:00\",\r\n\t\t\"EventSourceSystem\": \"EBS\",\r\n\t\t\"EventBusinessID\": \"6712\",\r\n\r\n    \"Product\": {\r\n      \"ProductId\": \"ABCDEFGHIJKLMNOPQRSTUVWXYZA\",\r\n      \"productSubstatus\": \"ABCDEFGHIJKLMNOPQRSTUV\",\r\n      \"VisibleFlag\": \"false\",\r\n      \"ActiveDate\": \"2019-2-6T00:00:00\",\r\n      \"IntroDate\": \"2019-2-6T00:00:00\",\r\n      \"OldProductId\": \"ABCDEFGHIJ\",\r\n      \"ProductName\": \"ABCDEFGHIJKLMNO\",\r\n      \"ProductDescription\": \"ABCDEFGHIJKLMNOPQRSTUVWXYZA\",\r\n      \"ProductDescriptionCanada\": \"ABCDEFGHIJKLMN\",\r\n      \"Keywords\": false,\r\n      \"ProductSubstatus\": \"ABCDEFGHIJKLMNOPQRSTU\",\r\n      \"SubStatusReason\": \"ABCDEFGHIJKLMNOPQ\",\r\n      \"IsHazardous\": \"false\"\r\n    }\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9208/addProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9208",
+					"path": [
+						"addProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9208/ProductIngestionAPI",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"EventObject\": \"CUSTOMER\",\r\n\t\t\"EventType\": \"CREATE\",\r\n\t\t\"EventDateTime\": \"2018-12-26T00:00:00\",\r\n\t\t\"EventSourceSystem\": \"EBS\",\r\n\t\t\"EventBusinessID\": \"6712\",\r\n\r\n    \"Product\": {\r\n      \"ProductId\": \"ABCDEFGHIJKLMNOPQRSTUVWXYZA\",\r\n      \"productSubstatus\": \"ABCDEFGHIJKLMNOPQRSTUV\",\r\n      \"VisibleFlag\": \"false\",\r\n      \"ActiveDate\": \"2019-2-6T00:00:00\",\r\n      \"IntroDate\": \"2019-2-6T00:00:00\",\r\n      \"OldProductId\": \"ABCDEFGHIJ\",\r\n      \"ProductName\": \"ABCDEFGHIJKLMNO\",\r\n      \"ProductDescription\": \"ABCDEFGHIJKLMNOPQRSTUVWXYZA\",\r\n      \"ProductDescriptionCanada\": \"ABCDEFGHIJKLMN\",\r\n      \"Keywords\": false,\r\n      \"ProductSubstatus\": \"ABCDEFGHIJKLMNOPQRSTU\",\r\n      \"SubStatusReason\": \"ABCDEFGHIJKLMNOPQ\",\r\n      \"IsHazardous\": \"false\"\r\n    }\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9208/ProductIngestionAPI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9208",
+					"path": [
+						"ProductIngestionAPI"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

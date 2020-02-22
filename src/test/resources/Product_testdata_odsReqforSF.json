@@ -1,0 +1,24 @@
+{
+  "EventObject": "CUSTOMER",
+		"EventType": "CREATE",
+		"EventDateTime": "2018-12-26T00:00:00",
+		"EventSourceSystem": "EBS",
+		"EventBusinessID": "6712",
+
+    "Product": {
+      "ProductId": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+      "productSubstatus": "ABCDEFGHIJKLMNOPQRSTUV",
+      "VisibleFlag": "false",
+      "ActiveDate": "2019-2-6T00:00:00",
+      "IntroDate": "2019-2-6T00:00:00",
+      "OldProductId": "ABCDEFGHIJ",
+      "ProductName": "ABCDEFGHIJKLMNO",
+      "ProductDescription": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+      "ProductDescriptionCanada": "ABCDEFGHIJKLMN",
+      "Keywords": false,
+      "ProductSubstatus": "ABCDEFGHIJKLMNOPQRSTU",
+      "SubStatusReason": "ABCDEFGHIJKLMNOPQ",
+      "IsHazardous": "false"
+    }
+  
+}
